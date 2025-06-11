@@ -35,7 +35,8 @@ Tu ne connais pas un truc ?
 > **Ça réfléchit.**
 
 
-[![Clique ici pour voir la vidéo](https://ton-domaine.com/play-button.png)](https://youtu.be/Tu7QHJnCE9c)
+[![Regarder la vidéo](https://img.youtube.com/vi/Tu7QHJnCE9c/hqdefault.jpg)](https://youtu.be/Tu7QHJnCE9c)
+
 
 
 Voici un atelier pratique pour apprendre les tests avec **Jest** et **Cypress** à travers un mini-jeu de créatures mythiques.
