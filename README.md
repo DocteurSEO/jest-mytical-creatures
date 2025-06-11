@@ -59,7 +59,7 @@ Merci l'ia pour ce diagramme des familles
 
 ```bash
 # Cloner ou télécharger le projet
-cd jest-workshop
+cd jest-mytical-creatures
 
 # Démarrer avec Docker
 npm run dev
@@ -212,7 +212,7 @@ ports:
   - "8081:80"    # frontend sur port 8081
 ```
 
-## 📚 Concepts Abordés
+## 📚 Concepts Clés ( demande a ton poto l'ai )
 
 ### Tests Unitaires
 - **Arrange, Act, Assert** pattern
@@ -240,13 +240,12 @@ ports:
 4. **Tests de performance** : Ajoutez des tests de charge avec Artillery
 5. **CI/CD Pipeline** : Configurez GitHub Actions pour les tests automatiques
 
-## 📖 Ressources
+## 📖 La doc pour les létrés 
 
 - [Documentation Jest](https://jestjs.io/docs/getting-started)
 - [Documentation Cypress](https://docs.cypress.io/guides/overview/why-cypress)
 - [Supertest Guide](https://github.com/visionmedia/supertest)
 - [Docker Compose Reference](https://docs.docker.com/compose/)
+- [git actions] (https://docs.github.com/en/actions)
 
 ---
-
-**🚀 Bon apprentissage et amusez-vous bien avec les créatures mythiques !**

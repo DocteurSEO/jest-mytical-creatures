@@ -6,41 +6,41 @@ describe('Gestion des créatures', () => {
   });
 
   it('devrait valider la création de créatures avec différents scénarios', () => {
-    // Test de création avec des valeurs valides
+   
     cy.createTestCreature('Hydre Puissante', 'Dragon', 95, 150);
     cy.get('[data-creature-id]').should('have.length', 6);
     
-    // Vérifier que la nouvelle créature apparaît avec les bonnes stats
+   
     cy.contains('Hydre Puissante').should('be.visible');
     cy.contains('Hydre Puissante').parent().within(() => {
       cy.contains('95').should('be.visible'); // Puissance
       cy.contains('150').should('be.visible'); // Santé
     });
     
-    // Test de création avec des valeurs limites
+
     cy.createTestCreature('Faible Pixie', 'Phénix', 1, 1);
     cy.get('[data-creature-id]').should('have.length', 7);
     
     cy.createTestCreature('Titan Ultime', 'Griffon', 100, 200);
     cy.get('[data-creature-id]').should('have.length', 8);
     
-    // Vérifier que toutes les créatures sont affichées
+    //  MERCI L'IAAAAAAA 
     cy.contains('Faible Pixie').should('be.visible');
     cy.contains('Titan Ultime').should('be.visible');
   });
 
   it('devrait gérer les combats jusqu\'à la mort et le système de soin', () => {
-    // Créer deux créatures pour le test
+    
     cy.createTestCreature('Combattant A', 'Dragon', 90, 80);
     cy.createTestCreature('Combattant B', 'Kraken', 85, 75);
     
-    // Organiser plusieurs combats pour blesser gravement les créatures
+    
     for (let i = 0; i < 3; i++) {
       cy.performBattle(5, 6); // Indices des nouvelles créatures
       cy.wait(1000); // Attendre entre les combats
     }
     
-    // Recharger les créatures pour voir l'état actuel
+    
     cy.loadCreaturesAndWait();
     
     // Vérifier qu'au moins une créature est gravement blessée ou morte
