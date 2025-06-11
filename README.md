@@ -41,6 +41,11 @@ Tu ne connais pas un truc ?
 Si tu trouves un bug ou si tu veux ajouter plus de tests, fais une pull request.  
 Tu peux aussi forker le projet et ajouter une GitHub Action, histoire d'aller plus loin.
 
+---
+
+Je tiens à remercier l'IA qui m'a aidé à réaliser cet atelier en moins de 2 heures de travail. MERCI 🙏
+
+---
 
 Voici un atelier pratique pour apprendre les tests avec **Jest** et **Cypress** à travers un mini-jeu de créatures mythiques.
 
