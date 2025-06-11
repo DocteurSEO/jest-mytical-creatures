@@ -3,7 +3,7 @@
  
 ## Salutation jeune padawan futur dev ou jeune titokeur,
 
-Au lieu de te balancer un cours **chiant** sur Docker, Docker Compose, Node, Express, JS,  
+Au lieu de te balancer un cours **barbant** sur Docker, Docker Compose, Node, Express, JS,  
 et même les tests avec **Jest** et **Cypress**…  
 je t’ai préparé **un atelier**. 
 
