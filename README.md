@@ -1,23 +1,43 @@
 # 🐉 Atelier Tests - Arène des Créatures Mythiques
+ 
+ 
+## Salutation jeune padawan futur dev ou jeune titokeur,
 
-Salutation jeune padawan futur dev ou jeune titokeur,
+Au lieu de te balancer un cours **chiant** sur Docker, Docker Compose, Node, Express, JS,  
+et même les tests avec **Jest** et **Cypress**…  
+je t’ai préparé **un atelier**. 
 
-Au lieu de te balancer un cours chiant sur Docker, Docker Compose, Node, Express, JS, et même les tests avec Jest et Cypress… je t’ai préparé un atelier.
+---
 
-Pourquoi ? Parce que ton cerveau a trop été ramolli par l’IA, et que tu ne pratiques plus.
+###  Pourquoi ?
+
+Parce que ton cerveau a trop été ramolli par l’IA, et que tu ne pratiques plus.  
 L’info est dispo partout maintenant :
-Tu tapes "Explique-moi Jest" à ChatGPT, il t’explique.
-Tu demandes un cours sur Cypress, il te le fait.
-Même sur YouTube, t’as des tutos pour tout…
 
-Mais voilà : mon but, c’est de réactiver ton cerveau.
-Apprendre par la pratique, avec un projet concret.
-Tu ne connais pas un truc ? Va voir l’IA, demande-lui d’expliquer.
-Ensuite, regarde une vidéo ou — soyons fous — lis la doc (oui, ça existe encore…).
+- Tu tapes `"Explique-moi Jest"` à ChatGPT → il t’explique.
+- Tu demandes un cours sur Cypress → il te le fait.
+- Même sur YouTube, t’as des tutos pour **tout**…
 
-Bref.
-Un développeur, ça code.
-Ça réfléchit.
+---
+
+Mais voilà : **mon but**, c’est de *réactiver ton cerveau*. ⚡  
+Apprendre par la pratique, avec **un projet concret**.
+
+Tu ne connais pas un truc ?  
+> Va voir l’IA, demande-lui d’expliquer.  
+> Ensuite, regarde une vidéo ou — soyons fous — **lis la doc** (oui, ça existe encore…).
+
+---
+
+###  Bref.
+
+> **Un développeur, ça code.**  
+> **Ça réfléchit.**
+
+
+[![Clique ici pour voir la vidéo](https://ton-domaine.com/play-button.png)](https://youtu.be/Tu7QHJnCE9c)
+
+
 Voici un atelier pratique pour apprendre les tests avec **Jest** et **Cypress** à travers un mini-jeu de créatures mythiques.
 
 ## 🎯 Objectifs de l'Atelier
