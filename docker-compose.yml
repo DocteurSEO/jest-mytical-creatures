@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - PORT=3001
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    networks:
+      - mythical-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+      - ./frontend/nginx.conf:/etc/nginx/nginx.conf:ro
+    networks:
+      - mythical-network
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  cypress:
+    image: cypress/included:13.6.3
+    depends_on:
+      - frontend
+      - backend
+    environment:
+      - CYPRESS_baseUrl=http://frontend:80
+    volumes:
+      - ./cypress:/cypress
+      - ./cypress.config.js:/cypress.config.js
+    networks:
+      - mythical-network
+    working_dir: /
+    profiles:
+      - testing
+
+networks:
+  mythical-network:
+    driver: bridge
+
+volumes:
+  backend_node_modules:

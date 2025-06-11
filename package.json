@@ -1,0 +1,25 @@
+{
+  "name": "mythical-creatures-workshop",
+  "version": "1.0.0",
+  "description": "Atelier de test avec Jest et Cypress - Jeu des créatures mythiques",
+  "scripts": {
+    "dev": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "test": "cd backend && npm test",
+    "test:watch": "cd backend && npm run test:watch",
+    "test:integration": "cd backend && npm run test:integration",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "docker-compose --profile testing run --rm cypress",
+    "test:e2e:local": "cypress run",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "echo 'Frontend utilise du JS vanilla - pas d'installation nécessaire'",
+    "build": "echo 'Projet de développement - pas de build nécessaire'"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.1"
+  },
+  "keywords": ["jest", "cypress", "testing", "workshop", "javascript", "node.js"],
+  "author": "Workshop Creator",
+  "license": "MIT"
+}

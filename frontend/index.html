@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐉 Arène des Créatures Mythiques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🐉 Arène des Créatures Mythiques</h1>
+        <p>Gérez vos créatures et organisez des combats épiques !</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <button id="load-creatures" class="btn btn-primary">Charger les Créatures</button>
+            <button id="reset-game" class="btn btn-secondary">Réinitialiser</button>
+        </section>
+
+        <section class="creatures-grid">
+            <div class="creatures-container">
+                <h2>🦄 Vos Créatures</h2>
+                <div id="creatures-list" class="creatures-list">
+                    <!-- Les créatures seront affichées ici -->
+                </div>
+            </div>
+        </section>
+
+        <section class="battle-section">
+            <h2>⚔️ Zone de Combat</h2>
+            <div class="battle-controls">
+                <div class="creature-select">
+                    <label for="attacker-select">Attaquant:</label>
+                    <select id="attacker-select" class="creature-select-dropdown">
+                        <option value="">Choisir une créature</option>
+                    </select>
+                </div>
+                <div class="battle-button-container">
+                    <button id="battle-btn" class="btn btn-battle" disabled>COMBATTRE!</button>
+                </div>
+                <div class="creature-select">
+                    <label for="defender-select">Défenseur:</label>
+                    <select id="defender-select" class="creature-select-dropdown">
+                        <option value="">Choisir une créature</option>
+                    </select>
+                </div>
+            </div>
+            <div id="battle-result" class="battle-result"></div>
+        </section>
+
+        <section class="create-creature">
+            <h2>✨ Créer une Nouvelle Créature</h2>
+            <form id="creature-form" class="creature-form">
+                <div class="form-group">
+                    <label for="creature-name">Nom:</label>
+                    <input type="text" id="creature-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="creature-type">Type:</label>
+                    <select id="creature-type" required>
+                        <option value="">Choisir un type</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="Phénix">Phénix</option>
+                        <option value="Licorne">Licorne</option>
+                        <option value="Griffon">Griffon</option>
+                        <option value="Kraken">Kraken</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="creature-power">Puissance (1-100):</label>
+                    <input type="number" id="creature-power" min="1" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="creature-health">Santé (1-200):</label>
+                    <input type="number" id="creature-health" min="1" max="200" required>
+                </div>
+                <button type="submit" class="btn btn-create">Créer la Créature</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>🧪 Atelier de Test - Jest & Cypress</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
