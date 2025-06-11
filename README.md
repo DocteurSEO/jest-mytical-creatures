@@ -38,6 +38,9 @@ Tu ne connais pas un truc ?
 [![Regarder la vidéo](https://img.youtube.com/vi/Tu7QHJnCE9c/hqdefault.jpg)](https://youtu.be/Tu7QHJnCE9c)
 
 
+Si tu trouves un bug ou si tu veux ajouter plus de tests, fais une pull request.  
+Tu peux aussi forker le projet et ajouter une GitHub Action, histoire d'aller plus loin.
+
 
 Voici un atelier pratique pour apprendre les tests avec **Jest** et **Cypress** à travers un mini-jeu de créatures mythiques.
 
